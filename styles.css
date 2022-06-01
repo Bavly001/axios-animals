@@ -1,0 +1,213 @@
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root {
+    --dark-blue: #112b3c;
+    --blue: #205375;
+    --light-blue: #347aa9;
+    --dark-orange: #9a4207;
+    --orange: #f66b0e;
+    --light-orange: #f1965a;
+    --grey: #efefef;
+}
+.home-route{
+    background-color: var(--grey);
+}
+.review-btn {
+    z-index: 11;
+    color: var(--grey);
+    background-color: var(--blue);
+    border: none;
+    padding: 15px 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: -2px 0px 5px -3px var(--dark-blue);
+    position: fixed;
+    right: -85px;
+    bottom: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.review-btn span {
+    padding-right: 6px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+.review-btn:hover {
+    background-color: var(--dark-blue);
+    transform: translateX(-80px);
+}
+.container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container #background {
+    z-index: -1;
+    width: 100%;
+    filter: blur(3px);
+}
+.container .color {
+    background-color: var(--dark-blue);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    opacity: 70%;
+}
+.container .form {
+    position: absolute;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form .title {
+    color: var(--grey);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.form .btn {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 12px;
+    background: none;
+    border: solid 1px var(--grey);
+    border-radius: 10px;
+    color: var(--grey);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover {
+    color: var(--orange);
+    border-color: solid 2px var(--orange);
+}
+.animals-btns {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg);
+    width: 100vh;
+    position: absolute;
+    left: -410px;
+    justify-content: center;
+}
+.animals-btns .btn {
+    width: 100%;
+    font-size: 25px;
+    padding: 15px 0;
+    border: none;
+    background-color: var(--dark-orange);
+    color: var(--grey);
+    box-shadow: 0px -2px 5px -3px var(--dark-blue);
+    transition: 0.4s;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animals-btns .btn:hover {
+    transform: translateY(-40px);
+}
+.animals-btns .dogs-btn {
+    background-color: var(--orange);
+}
+.animals-btns .foxes-btn {
+    background-color: var(--light-orange);
+}
+.animals-section .animal-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px 0;
+}
+.animal-section .animal-name-header {
+    color: var(--dark-blue);
+    font-size: 80px;
+    font-weight: lighter;
+}
+.animal-section .animal-description{
+    color: var(--dark-blue);
+    font-size: 30px;
+    margin: 10px 90px;
+    text-align: justify;
+}
+.animal-section .animal-img-frame {
+    border: var(--dark-blue) 3px solid;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animal-img-frame .animal-img {
+    width: 200px;
+}
+.animal-section .explore-more{
+    color: var(--orange);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+.animal-section .explore-more:hover {
+    color: var(--dark-orange);
+}
+.animal-section .arrow{
+    transition: all 0.4s;
+}
+.animal-section .explore-more:hover .arrow{
+    transform: translateX(40px);
+}
+.animals-section .dogs-section {
+    --dark-blue: #efefef;
+    --grey: #112b3c;
+    background-color: var(--grey);
+}
+.top-btn-div{
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.top-button{
+    background-color:var(--blue);
+    color: var(--grey);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    position:absolute;
+    border-radius: 50%;
+    left: 20px;
+    overflow:hidden;
+}
+.top-button:hover{
+    background-color: var(--dark-blue);
+}
+.top-button .up-arrow{
+    margin: 12px 0;
+    transition: 0.4s;
+}
+.top-button:hover .up-arrow{
+    transform: translateY(-47px);
+}
