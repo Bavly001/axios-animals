@@ -21,6 +21,4 @@ setInterval(function () {
     } else {
         image_view(array_axios_getters.pop());
     }
-}, 2000);
-
-console.log(array_axios_getters);
+}, 3000);
