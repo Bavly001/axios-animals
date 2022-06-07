@@ -1,3 +1,5 @@
+/*---------Index Router---------*/
+/*-------Top Section-------*/
 let dog = "https://dog.ceo/api/breeds/image/random";
 let fox = "https://randomfox.ca/floof/";
 let cat = "https://api.thecatapi.com/v1/images/search";
@@ -22,3 +24,22 @@ setInterval(function () {
         image_view(array_axios_getters.pop());
     }
 }, 3000);
+
+/*-------Animals Section-------*/
+var top_button = document.getElementById("top-button");
+
+
+window.onscroll = function () {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        top_button.style.transform = "translateX(30px)";
+        top_button.style.opacity = "100%";
+    }
+    else {
+        top_button.style.transform = "translateX(-30px)";
+        top_button.style.opacity = "0%";
+    }
+}
+top_button.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
