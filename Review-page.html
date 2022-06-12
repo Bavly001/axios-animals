@@ -9,113 +9,66 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
-<body class="home-route">
-    <button class="btn2 review-btn center">
-        <span class="material-symbols-outlined"> rate_review </span>
-        Review
+<body class="review-route" id="review-page">
+    <button class="btn2 review-btn center home-btn" onclick="window.location.href='/index.html'">
+        <span class="material-symbols-outlined">
+            home
+        </span>
+        Home
     </button>
 
-    <button class="btn2 top-button center" id="top-button"><span class="material-symbols-outlined up-arrow">
+    <button class="btn2 top-button center overflow-hidden" id="top-button"><span
+            class="material-symbols-outlined up-arrow">
             arrow_upward </span><span class="material-symbols-outlined up-arrow">
             arrow_upward
         </span></button>
-
-    <div id="top" class="container center">
-        <img src="" id="background" />
-        <div class="color"></div>
-        <div class="form">
-            <h1 class="title" id="title">
-                Do you want to know more about some animals?
-            </h1>
-            <button class="btn">Explore More</button>
-        </div>
-        <div class="animals-btns">
-            <a href="#cat-section" class="btn cats-btn center">Cats</a>
-            <a href="#dog-section" class="btn dogs-btn center">Dogs</a>
-            <a href="#fox-section" class="btn foxes-btn center">Foxes</a>
+    <div class="title overflow-hidden">
+        <video src="/Videos/Sunset.mp4" class="background-video" autoplay muted loop></video>
+        <div class="black-color"></div>
+        <h1 class="review-title">
+            <span class="small-title">From our pleasure</span>
+            TO KNOW YOUR REVIEW
+            <span class="small-title">Please, leave your review here...</span>
+        </h1>
+    </div>
+    <div class="get-review ">
+        <h1 class="form-title center">
+            Cause your comfort is important to us
+            <span class="enjoy">We hope you enjoy using our website and have a great time, so we would like to know if
+                you have any problem or you have any question ...</span>
+        </h1>
+        <form class="inputs center">
+            <input type="text" class="info" placeholder="First Name" id="first-name" required>
+            <input type="text" class="info" placeholder="Last Name" id="last-name" required>
+            <input type="email" class="info" placeholder="Email Address" id="email" required>
+            <div class="radio-input center">
+                <label for="male" class="gender center">
+                    <input type="radio" class="radio-info" value="male" name="gender"> Male
+                </label>
+                <label for="Female" class="gender center">
+                    <input type="radio" class="radio-info" value="female" name="gender"> Female</label>
+            </div>
+            <textarea class="info" placeholder="Leave your comment here ..." maxlength="150" id="comment"></textarea>
+            <p id="error">Please, Fill out all fields</p>
+            <button class="btn" id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="reviews" id="reviews">
+        <h1 class="reviews-title">
+            Reviews
+            <span class="number" id="number"></span>
+        </h1>
+        <div class="review">
+            <div class="personal-info center">
+                <img src="/Images/avatar-male.png" alt="" class="avatar">
+                <h2 class="full-name">Ali Youssef</h2>
+            </div>
+            <p class="comment">
+                It was a great experience with the website and I was able to get a better understanding of the website.
+            </p>
         </div>
     </div>
 
-    <div class="animals-section">
-        <div class="animal-section cats-section" id="cat-section">
-            <div class="animal-img-frame center">
-                <img src="/Images/59cfc06fd3b1936210a5ddb6.svg" alt="cat-img" class="animal-img" />
-            </div>
-            <h1 class="animal-name-header">Cats</h1>
-            <p class="animal-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid libero pariatur sed eius perspiciatis itaque placeat
-                quidem hic explicabo magni provident id commodi molestias,
-                nesciunt iste, accusamus, asperiores deserunt rem! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                quibusdam doloribus distinctio maxime aperiam aut ut dolorem
-                sint a pariatur eos, consequuntur cum voluptatibus quis
-                eveniet accusantium, tenetur, corporis harum. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Sapiente,
-                error. Fugit obcaecati voluptates explicabo sapiente ducimus
-                delectus veritatis accusantium perspiciatis iusto odio,
-                ipsum, expedita nam! Beatae ex magnam ut totam.
-            </p>
-            <a href="" class="explore-more">Explore more
-                <span class="material-symbols-outlined arrow">
-                    arrow_forward
-                </span></a>
-        </div>
-
-        <div class="animal-section dogs-section" id="dog-section">
-            <div class="animal-img-frame overflow-hidden center">
-                <img src="/Images/1678353.svg" alt="dog-img" class="animal-img" />
-            </div>
-            <h1 class="animal-name-header">Dogs</h1>
-            <p class="animal-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid libero pariatur sed eius perspiciatis itaque placeat
-                quidem hic explicabo magni provident id commodi molestias,
-                nesciunt iste, accusamus, asperiores deserunt rem! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                quibusdam doloribus distinctio maxime aperiam aut ut dolorem
-                sint a pariatur eos, consequuntur cum voluptatibus quis
-                eveniet accusantium, tenetur, corporis harum. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Sapiente,
-                error. Fugit obcaecati voluptates explicabo sapiente ducimus
-                delectus veritatis accusantium perspiciatis iusto odio,
-                ipsum, expedita nam! Beatae ex magnam ut totam.
-            </p>
-            <a href="" class="explore-more">Explore more
-                <span class="material-symbols-outlined arrow">
-                    arrow_forward
-                </span></a>
-        </div>
-
-        <div class="animal-section foxes-section" id="fox-section">
-            <div class="animal-img-frame overflow-hidden center">
-                <img src="/Images/612964455da4d50e07c0236230ed7e80.svg" alt="fox-img" class="animal-img" />
-            </div>
-            <h1 class="animal-name-header">Foxes</h1>
-            <p class="animal-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid libero pariatur sed eius perspiciatis itaque placeat
-                quidem hic explicabo magni provident id commodi molestias,
-                nesciunt iste, accusamus, asperiores deserunt rem! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                quibusdam doloribus distinctio maxime aperiam aut ut dolorem
-                sint a pariatur eos, consequuntur cum voluptatibus quis
-                eveniet accusantium, tenetur, corporis harum. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Sapiente,
-                error. Fugit obcaecati voluptates explicabo sapiente ducimus
-                delectus veritatis accusantium perspiciatis iusto odio,
-                ipsum, expedita nam! Beatae ex magnam ut totam.
-            </p>
-
-            <a href="" class="explore-more">Explore more
-                <span class="material-symbols-outlined arrow">
-                    arrow_forward
-                </span></a>
-        </div>
-    </div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 
