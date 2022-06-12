@@ -60,6 +60,28 @@ if (page == "home") {
 }
 
 /*---------Animals Router---------*/
+else if (page == "cat-page") {
+    /*----------------Cats Section-------------*/
+    img_id = "cats-background";
+    axios.get(cat).then(res => image_view(res.data[0].url));
+    setInterval(
+        function () {
+            axios.get(cat).then(res => image_view(res.data[0].url))
+        }, 3000
+    );
+}
+/*----------------Dogs Section-------------*/
+else if (page == "dog-page") {
+    img_id = "dogs-background";
+    axios.get(dog).then(res => image_view(res.data.message));
+    setInterval(
+        function () {
+            axios.get(dog).then(res => image_view(res.data.message))
+        }, 3000
+        );
+    }
+    
+/*----------------Foxes Section-------------*/
 else if (page == "fox-page") {
     img_id = "foxes-background";
     axios.get(fox).then(res => image_view(res.data.image));
